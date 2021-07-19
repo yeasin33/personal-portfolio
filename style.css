@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    background-image:url("images/white-somke-back.jpg");
+    font-family: 'Poppins', sans-serif;
+}
+nav ul {
+    margin-right:5rem;
+}
+nav ul li{
+    list-style-type:none;
+    float: right;
+    padding:10px 16px;
+    
+}
+nav ul li a{
+    text-decoration:none;
+    font-size:large;
+    color: rgb(40, 150, 144);
+    font-weight:400px;
+}
+nav ul li a:hover{
+    color:orange;
+    text-decoration:underline rgba(240, 24, 0, 0.904);
+}
+
+.half-width img{
+    width: 100%;
+}
+.half-width{
+    width:35%;
+    float:left;
+    display: block;
+    margin-left:4%;
+    padding: 2%;
+}
+
+.hire-area{
+    padding-top:200px;
+}
+.orange-color{
+    color: lightslategrey;
+    font-size: 60px;
+    color-interpolation-filters: linearRGB;
+    margin: 0;
+}
+.name-heighlight{
+    font-size: 40px;
+    color:rgb(236, 156, 6);
+    margin: 0;
+}
+p{
+    font-size: 20px;
+    color: dimgray;
+}
+.link-btn{
+    text-decoration: none;
+    padding: 10px 25px;
+   background-color:green;
+    border-radius:5px;
+    color:white;
+
+}
+.link-btn:hover{
+    color: deeppink;
+    text-decoration: underline red;
+    
+}
+
+.half-width p > a[type="cv"]::before{
+    content: '\f019';
+    font-family:"Font Awesome 5 Free";
+    font-weight:bold;
+    color:white;
+   padding-right: 10px;
+}
+.half-width p > a[type="cv"]{
+    text-decoration:none;
+    font-size: medium;
+}
+
+.show-project-area{
+    width:25%;
+    float: left;
+}
+.show-project-area img{
+    width: 80%;
+}
+
