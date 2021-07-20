@@ -79,10 +79,31 @@ p{
 }
 
 .show-project-area{
-    width:25%;
-    float: left;
+    
 }
 .show-project-area img{
-    width: 80%;
+    width: 20%;
+}
+.about-area{
+    padding-top:200px;
+}
+.about-area > h1{
+    font-size:30px;
+    color:lightseagreen;
 }
 
+
+.container{
+    height: 500px;
+    background-color: blueviolet;
+}
+.project-area{
+    margin-left:180px;
+    margin-top:140px;
+   
+    
+}
+.project-area img{
+    margin:20px;
+    box-shadow: 10px 10px 14px gray;
+}

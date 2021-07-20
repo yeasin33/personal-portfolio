@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="try.css">
+  <title>Practic css design</title>
+  <style>
+    div img{
+      position:relative;
+      left: 200px;
+      margin:20px;
+      top: 150px;
+      box-shadow: 10px 10px 15px gray;
+    }
+    .project-area{
+      background-color: beige;
+      height: 500px;
+    }
+
+    .relative{
+      border: 3px solid green;
+      height: 300px;
+      position: relative;
+      background-color: tomato;
+
+    }
+    .absulated{
+      border:3px solid yellow;
+      position:absolute;
+      width: 200px;
+      height: 100px;
+      top: 90px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <section class="project-area"> 
+    <div>
+      <img src="images/image 4.png" alt="" width="20%">
+      <img src="images/image 5.png" alt="" width="20%">
+      <img src="images/image 8.png" alt="" width="20%">
+    </div>
+  </section>
+
+  <section>
+    <div class="relative">
+      <p>this position is a relative.</p>
+      <div class="absulated">
+         <p>hi i am a absulated items.thank you.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
