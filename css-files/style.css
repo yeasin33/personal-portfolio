@@ -2,7 +2,9 @@ body{
     margin: 0;
     background-image:url("images/white-somke-back.jpg");
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
+
 nav ul {
     margin-right:5rem;
 }
@@ -35,34 +37,22 @@ nav ul li #not-hover{
 nav ul li a:hover:not(#not-hover){
     color:#007575;
 }
-
-/* .top-banner{
-    position:relative;
-    
-    height: 500px;
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
-.identity-area{
-    position:absolute;
-    left: 200px;
-    top:150px;
-
-}
-.bnr-image1{
-    position: absolute;
-    right:150px;
-    top: 20px;
-} */
-
-.row > .col{
-    width: 45%;
+.col-right{
+    width: 50%;
+    padding-left: 10%;
+    /* padding-top:10rem; */
     float: left;
-    position: relative;
-    margin-left:5%;
 }
-.row > .identity-area{
-    position: inherit;
-    margin: top 1.5rem;
+.col-left{
+    width: 35%;
+    float: left;
 }
+
 .row::after{
     content:'';
     display: table;
@@ -94,50 +84,33 @@ p{
 .link-btn:hover{
     color: blue;
 }
-.banner-area{
-    position: relative;
-    height: 400px;
-}
-.about-area{
-    position: absolute;
-    width: 400px;
-    right: 150px;
-    bottom:35%;
 
-}
-.bnr-image2{
-    position: absolute;
-    left:200px ;
-    bottom:100px;
-}
-.about-area > p a::before{
+
+
+/* .about-area > p a::before{
     content:'\f019';
     font-family:'Font Awesome 5 Free';
     font-weight:bold;
     color:white;
     padding-right: 10px;
+} */
+
+.gallery a img{
+    width: 100%;
+    height: auto;
+}
+.responsive{
+    width: 30%;
+    float: left;
+    padding: 0 6px;
+}
+.responsive::after{
+    content: '';
+    display: table;
+    clear: both;
 }
 
-.project-show{
-    position:relative;
-    height: 500px;
-    background-color: rgba(255, 255, 255, 0.959);
-}
-.project-image img{
-    width: 25%;
-    box-shadow: 10px 10px 15px gray;
-    padding-left: 10px;
-}
-.project-image{
-    position:absolute;
-    text-align: center;
-    top: 145px;
-    transition:.4s;
 
-}
-.project-image:hover{
-    transform: scale(1.1);
-}
 .project-show > h1{
     text-align: center;
     font-size: 50px;
@@ -238,6 +211,24 @@ button{
     nav ul li a{
         background-color: #7cfc00;
         border-radius:5px;
+    }
+    
+}
+
+/* @media screen and (max-width:800px){
+    .col-right , .col-left{
+        float: left;
+        padding-left: 4%;
+       
+       
+    }
+    
+} */
+
+@media screen and (max-width:450px) {
+    .col-left , .col-right{
+        width: 100%;
+        padding-top: 0%;  
     }
     
 }
