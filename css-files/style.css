@@ -6,23 +6,37 @@ body{
 nav ul {
     margin-right:5rem;
 }
-nav ul li{
+
+
+nav ul{
     list-style-type:none;
-    float: right;
-    padding:10px 16px;
-    
+    margin:0;
+    padding:0;
+    overflow: hidden;
 }
+nav ul li{
+   float: right;
+}
+
 nav ul li a{
+    display: block;
+    padding:8px 12px;
     text-decoration:none;
-    font-size:large;
-    color: rgb(40, 150, 144);
-    font-weight:400px;
+    margin-top: 12px;
+    color: #006B09;
+    font-size:1rem;
+    font-weight:500;
 }
-nav ul li a:hover{
-    color:orange;
-    text-decoration:underline rgba(240, 24, 0, 0.904);
+nav ul li #not-hover{
+    background-color: #00ffff;
+    color:#0B0A0A;
+    border-radius:5px;
 }
-.top-banner{
+nav ul li a:hover:not(#not-hover){
+    color:#007575;
+}
+
+/* .top-banner{
     position:relative;
     
     height: 500px;
@@ -37,6 +51,22 @@ nav ul li a:hover{
     position: absolute;
     right:150px;
     top: 20px;
+} */
+
+.row > .col{
+    width: 45%;
+    float: left;
+    position: relative;
+    margin-left:5%;
+}
+.row > .identity-area{
+    position: inherit;
+    margin: top 1.5rem;
+}
+.row::after{
+    content:'';
+    display: table;
+    clear: both;
 }
 div > .name-heighlight{
     font-size: 45px;
@@ -56,7 +86,7 @@ p{
 .link-btn{
     text-decoration:none;
     padding: 10px 16px;
-    background-color:rgb(121, 241, 0);
+    background-color:#78f000;
     color:black;
     font-weight: 500;
     border-radius:7px;
@@ -80,7 +110,7 @@ p{
     left:200px ;
     bottom:100px;
 }
-.about-area > p a[type="cv"]::before{
+.about-area > p a::before{
     content:'\f019';
     font-family:'Font Awesome 5 Free';
     font-weight:bold;
@@ -102,7 +132,11 @@ p{
     position:absolute;
     text-align: center;
     top: 145px;
+    transition:.4s;
 
+}
+.project-image:hover{
+    transform: scale(1.1);
 }
 .project-show > h1{
     text-align: center;
@@ -193,4 +227,17 @@ button{
 
 .footer{
     text-align: center;
+}
+
+@media  screen  and (max-width:550px){
+    nav ul li{
+        width:100%;
+        text-align:center;
+        background-color: ;
+    }
+    nav ul li a{
+        background-color: #7cfc00;
+        border-radius:5px;
+    }
+    
 }
