@@ -1,8 +1,6 @@
 body{
     margin: 0;
-    background-image:url("images/white-somke-back.jpg");
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
 
 nav ul {
@@ -15,6 +13,7 @@ nav ul{
     margin:0;
     padding:0;
     overflow: hidden;
+    background-color: white;
 }
 nav ul li{
    float: right;
@@ -25,7 +24,7 @@ nav ul li a{
     padding:8px 12px;
     text-decoration:none;
     margin-top: 12px;
-    color: #006B09;
+    color: #005C08;
     font-size:1rem;
     font-weight:500;
 }
@@ -35,200 +34,17 @@ nav ul li #not-hover{
     border-radius:5px;
 }
 nav ul li a:hover:not(#not-hover){
-    color:#007575;
+    color:#005252;
 }
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-.col-right{
-    width: 50%;
-    padding-left: 10%;
-    /* padding-top:10rem; */
-    float: left;
-}
-.col-left{
-    width: 35%;
+
+.top-bnr-area > .row > .col{
+    width: 49%;
     float: left;
 }
 
-.row::after{
-    content:'';
-    display: table;
-    clear: both;
-}
-div > .name-heighlight{
-    font-size: 45px;
-    color:#000080;
-    margin:0;
-}
-div > .blue-color{
-    color: #4169E1;
-    font-size: 40px;
-    margin: 0;
-}
-p{
-    color:#008080;
-    font-size:20px;
-    text-align: justify;
-}
-.link-btn{
-    text-decoration:none;
-    padding: 10px 16px;
-    background-color:#78f000;
-    color:black;
-    font-weight: 500;
-    border-radius:7px;
-}
-.link-btn:hover{
-    color: blue;
-}
-
-
-
-/* .about-area > p a::before{
-    content:'\f019';
-    font-family:'Font Awesome 5 Free';
-    font-weight:bold;
-    color:white;
-    padding-right: 10px;
-} */
-
-.gallery a img{
-    width: 100%;
-    height: auto;
-}
-.responsive{
-    width: 30%;
-    float: left;
-    padding: 0 6px;
-}
-.responsive::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-
-.project-show > h1{
-    text-align: center;
-    font-size: 50px;
-    color: #FF4500;
-    padding-top: 20px;
-}
-.project-show > h1  span{
-    color: teal;
-}
-.service-area{
-    position:relative;
-    height:400px;
-    background-color: #FFFFF0;
-}
-.service-area div{
-    width: 25%;
-    float: left;
-    padding:20px;
-    height:200px;
-    margin-top:40px ;
-   
-} 
-.frontend{
-    position:absolute;
-    left: 6%;
-    box-shadow: 10px 10px 30px gray;
-}
-.uxdesign{
-    position: absolute;
-    box-shadow:  10px 10px 30px gray;
-    right: 35%;
-}
-.backend{
-    box-shadow:  10px 10px 30px gray;
-    position:absolute;
-    right: 50px;
-}
-
-.service-heighlight{
-    font-size: 20px;
-    color:darkblue;
-}
-h4{
-    font-size: 25px;
-    color: #000080;
-    margin-top: 0;
-    margin-bottom:0;
-    
-}
-.service-area > h1{
-    font-size: 40px;
-    text-align: center;
-    color: green;
-
-}
-.inquiry{
-    height: 300px;
-    position: relative;
-}
-.back-image{
-    position:absolute;
-    left: 33%;
-    top: 100px;
-}
-button{
-    padding: 10px 16px;
-    color: white;
-    font-size :1.0vw;
-    background-color: #4B0082;
-    border:none;
-    border-radius:4px;
-}
-.inquiry-btn{
-    position: absolute;
-    top:137px;
-    left: 57%;
-}
-.inquiry-text{
-    position:absolute;
-    left: 34%;
-    top: 124px;
-    color: white;
-}
-.footer img{
-    width: 5%;
-}
-
-.footer{
-    text-align: center;
-}
-
-@media  screen  and (max-width:550px){
-    nav ul li{
-        width:100%;
-        text-align:center;
-        background-color: ;
-    }
-    nav ul li a{
-        background-color: #7cfc00;
-        border-radius:5px;
-    }
-    
-}
-
-/* @media screen and (max-width:800px){
-    .col-right , .col-left{
-        float: left;
-        padding-left: 4%;
-       
-       
-    }
-    
-} */
-
-@media screen and (max-width:450px) {
-    .col-left , .col-right{
+@media only screen and (max-width:500px){
+    .row{
         width: 100%;
-        padding-top: 0%;  
+        float: e;
     }
-    
 }
