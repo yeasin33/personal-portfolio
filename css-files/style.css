@@ -4,7 +4,16 @@ body{
     font-family: 'Poppins', sans-serif;
    
 }
+:root{
+    --box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    --br:5px;
+    --relative:relative;
+    --absolute:absolute;
+    --border:1px solid #ccc;
+    --clr-gray:#595959;
+    --clr-black:black;
 
+}
 nav ul {
     margin-right:5rem;
     animation:nav-load 2s ease-in-out;
@@ -91,7 +100,7 @@ nav ul li a:hover:not(#not-hover){
     font-family:"Font Awesome 5 Free";
     font-weight:bold;
     color:white;
-   padding:10px 5px;
+    padding:10px 5px;
     align-self: center;
 }
 
@@ -107,10 +116,10 @@ h4 > span{
 .col2{
     width:31.3333% ;
     float: left;
-    border: 1px solid #f1f1f1;  
+    border:var(--border);  
     border-radius:5px;
     padding-left:5px;  
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow:var(--box-shadow);
     position:relative;
     top:50px;
     margin: 0.5rem;
@@ -148,7 +157,6 @@ h5{
     font-weight:200;
     color: #465059;
     padding: 12px 16px;
-    
      margin: auto;
 
 }
@@ -161,20 +169,20 @@ h5{
     text-align: justify;
     position:relative;
     top: 100px;
-    border: 1px solid #ddd;
+    border: var(--border);
     margin:0.8%;    
     padding: 8px 10px;
     border-radius:5px ;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow:var(--box-shadow);
 }
 .col3:hover{
-    border: #f4f4f4;
+    border: none;
 }
 .col3 p:first-child{
-    color: black;
+    --clr-black:var(var(--clr-gray)
     text-align: center;
     font-size:1.2rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom:var(--border);
 }
 .col3 p:nth-child(2){
     color:#595959;
